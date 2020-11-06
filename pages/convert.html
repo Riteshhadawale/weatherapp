@@ -1,0 +1,21 @@
+Currency Conversion 
+
+
+<hr>
+
+
+<div ng-repeat="c in currencyResult">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                    <h1>: {{(currencyResult.rates.USD) }} </h1>
+             
+               {{ convertToUsd(currencyResult.rates.USD * 61.06)}}
+
+
+              {{ convertToAnotherCurrency(currencyResult.rates.USD * 11)}} 
+            </div> 
+        </div>
+    </div>
+</div>
+
